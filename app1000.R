@@ -5,8 +5,8 @@ library(leaflet)
 library(ggplot2)
 
 # Read the data
-wagedata <- file.choose()     # file.choose() is to select the CSV file manually
-wagedata <- read.csv(wagedata)  
+wagedata <- "https://raw.githubusercontent.com/ECONET-TU/econet/main/wagedata.csv" 
+wagedata <- read.csv(wagedata)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
